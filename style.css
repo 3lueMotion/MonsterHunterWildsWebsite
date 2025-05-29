@@ -105,3 +105,51 @@ img.banner{
 .rotate-right{
 	transform: rotate(2deg);
 }
+
+@media (max-width: 768px) {
+  /* Navbar kleiner & gestapelt */
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  /* Video kleiner */
+  .vid iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Storytext lesbarer machen */
+  .story_text {
+    font-size: 16px;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  /* Slider anpassen */
+  .slider {
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  /* Galerie-Bilder anpassen */
+  .monster-img,
+  img[class^="Galarie"],
+  img[class^="img."] {
+    width: 90%;
+    margin: 40px auto;
+    display: block;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
