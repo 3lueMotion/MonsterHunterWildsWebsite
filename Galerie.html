@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<title>Monster-Hunter</title>
+<link rel="Stylesheet" href="style.css"/>
+
+</head>
+<body>
+	<img class="banner" src="img/banner.png" alt="Banner">
+	<section class="navbar">
+		<a class="button" href="index.html">Home</a>
+		<a class="button" href="story.html">Story</a>
+		<a class="button" href="Galerie.html">Galerie</a>
+		
+	</section>
+		
+	<div class="slider">
+		<img class="slides" src="img/Galarie_bild1.png"style="display: block;">
+		<img class="slides" src="img/Galarie_bild2.png">
+		<img class="slides" src="img/Galarie_bild3.png">
+		<img class="slides" src="img/Galarie_bild4.png">
+		<img class="slides" src="img/Galarie_bild5.png">
+		<img class="slides" src="img/Galarie_bild6.png">
+	</div>
+	<script>
+			let index = 0;
+			const slides = document.getElementsByClassName("slides");
+
+			function showSlides() {
+    			for (let i = 0; i < slides.length; i++) {
+      				  slides[i].style.display = "none";
+   			 }
+   			 index++;
+    		if (index > slides.length) { index = 1; }
+   			slides[index - 1].style.display = "block";
+   			setTimeout(showSlides, 6000); // alle 6 Sekunden wechseln
+		}
+
+		showSlides();
+	</script>
+	<div>
+		<img src="img/Arkweld.webp"class="monster-img offset-left rotate-left" alt="Arkweld">
+		<img src="img/Galarie_bild1_7.webp" class="monster-img offset-right rotate-right" alt="Ajarakan">
+		<img src="img/Jin Dahaard.webp" class="monster-img offset-left rotate-left" alt="Jin Dahaard">
+		<img src="img/Uth Duna.webp" class="monster-img offset-right rotate-right" alt="Uth Duna">
+		<img src="img/Galarie_bild1_6.webp" class="monster-img offset-left rotate-left" alt="Rompopolo">
+		<img src="img/Galarie_bild1_8.webp" class="monster-img" "offset-right" "rotate-right" alt="Congalala">
+		<img src="img/Galarie_bild1_9.webp" class="monster-img offset-left rotate-left" alt="Quematrice">
+		<img src="img/Galarie_bild2_0.webp" class="monster-img offset-right rotate-right" alt="Lala Barina">
+		<img src="img/Galarie_bild2_1.webp" class="monster-img offset-left rotate-left" alt="Chatacabra">
+		<img src="img/Galarie_bild2_2.webp" class="monster-img offset-right rotate-right" alt="Doshaguma">
+		<img src="img/Balahara.webp" class="monster-img offset-left rotate-left" alt="Balahara">
+		<img src="img/Reydau.webp" class="monster-img offset-right rotate-right" alt="Reydau">
+		
+	</div>
+	
+</body>
