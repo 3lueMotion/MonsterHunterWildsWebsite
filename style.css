@@ -110,6 +110,7 @@ img.banner{
   /* Navbar kleiner & gestapelt */
   .navbar {
     flex-direction: column;
+    align-item: center;
     gap: 20px;
     font-size: 24px;
     padding: 20px;
@@ -144,8 +145,8 @@ img.banner{
   }
 
   .button {
-    width: 100%;
-    max-width: 300px;
+    width: 90%;
+    text-align: center;
   }
 }
 
